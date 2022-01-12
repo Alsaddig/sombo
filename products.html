@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<title> GLOBAL CORPORATION FOR RENEWABLE ENERGY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/lightbox.js"></script>
+		<script src="js/scripts.js"></script>
+		<script>	 
+			 jQuery(document).ready(function($) {
+				$('a').smoothScroll({
+				speed: 1000,
+				easing: 'easeInOutCubic'
+				});
+				$('.showOlderChanges').on('click', function(e){
+				$('.changelog .old').slideDown('slow');
+				$(this).fadeOut();
+				e.preventDefault();
+				 })
+				 });
+
+		</script>
+			<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<script type="text/JavaScript">
+
+		var picCount=0; // global
+		var picArray= ["images/smoogle.png","images/nilbog.png","images/pokeoAdd.png","images/McDonald'sAD.png","images/callToWar.png", ]
+		//
+		// gets next picture in array
+		function nextPic()
+		{ // check if adding 1 exceeds number of pics in array
+		picCount=(picCount+1<picArray.length)? picCount+1 : 0;
+		// build the img to write to page using the new pic reference
+		var build='<img border="0" src="'+picArray[picCount]+'" width="260" height="100%">\
+		';
+		document.getElementById("imgHolder").innerHTML=build;
+		// repeat this after a pause of 8000ms (8sec).
+		setTimeout('nextPic()',8000)
+		}
+
+		</script>
+</head>
+<body>
+    <div id="container" >
+        <header>
+            <div id="logo">
+				 <a><img src="image/LOG3.PNG" /></a>
+			</div><!--end of logodiv  -->
+		</header>
+        <nav>
+            <a class="toggleMenu" href="#"><img src="image/menu-icon.png" />Menu</a>
+				<ul class="menu">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="#">PRODUCTS</a></li>
+					<li><a href="#">CONSUMER</a></li>
+					<li><a href="#">ENERGIE</a>	</li>
+					<li><a href="#">VIDEOS</a></li>
+					<li><a href="#">PROJECTS</a></li>
+					<li><a href="contact.html">CONTACTS</a></li>
+				</ul>
+        </nav>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<div id="bannerBackground">
+			<div id="baner"> 
+			<div class="slideshow-container">
+			  <div class="mySlides fade">
+				<div class="numbertext">1 / 5</div>
+				<img src="image/p1.jpg" style="width:100%">
+				<div class="text">Bugatti Cars Wallpaper</div>
+			  </div>
+			  <div class="mySlides fade">
+				<div class="numbertext">2 / 5</div>
+				<img src="image/p2.jpg" style="width:100%">
+				<div class="text"> Cool Paint Jobs On Cars </div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<div class="numbertext">3 / 5</div>
+				<img src="image/p3.jpg" style="width:100%">
+				<div class="text">Peugeot 4002 Concept Car</div>
+			  </div>
+			  <div class="mySlides fade">
+				<div class="numbertext">4 / 5</div>
+				<img src="image/p4.jpg" style="width:100%">
+				<div class="text">Peugeot 4002 Concept Car</div>
+			  </div>
+			  <div class="mySlides fade">
+				<div class="numbertext">5 / 5</div>
+				<img src="image/p5.jpg" style="width:100%">
+				<div class="text">Peugeot 4002 Concept Car</div>
+			  </div>
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			  <span class="dot" onclick="currentSlide(4)"></span> 
+			  <span class="dot" onclick="currentSlide(5)"></span> 
+			</div>
+			<script src="js/scripts.js"></script>
+		</div><!--end of baner div  -->
+		</div>
+		<section>
+        <aside>
+            <iframe width="310" height="315" src="https://www.youtube.com/embed/HciKU63dLtA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </aside><!--end of aside  -->
+        <article id="option">
+            <h1>Renewable Energy</h1>
+                <div id="items">
+				 	<div id="item1">
+				 		<a><img src="images/face1.jpg" /></a>
+							<h2>$25.00</h2>						
+						<div id="buy"> <h2><a href="##">Buy Now </a></h2> </div>
+					</div>	
+					<div id="item2">
+				 		<a><img src="images/face2.jpg" /></a>
+						<h2>$25.00</h2>						
+						<div id="buy"> <h2><a href="##">Buy Now </a></h2> </div>
+					</div>
+					<div id="item3">
+				 		<a><img src="images/face3.jpg" /></a> 
+						  <h2>$25.00</h2>
+						<div id="buy"> <h2><a href="##">Buy Now </a></h2> </div>						
+					</div>
+					<div id="item4">
+				 		<a><img src="images/face4.jpg" /></a>
+						<h2>$25.00</h2>
+						<div id="buy"> <h2><a href="##">Buy Now </a></h2> </div>
+					</div>
+				 
+				 </div>
+				
+				 <div id="items">
+				 	<div id="item1">
+					
+				 		<a><img src="images/face5.jpg" /></a>
+						<h2>$25.00</h2>
+						<div id="buy"> <h2><a href="##">Buy Now </a></h2> </div>
+					</div>	
+					<div id="item2">
+				 		<a><img src="images/face6.jpg" /></a> 
+						<h2>$25.00</h2>
+						<div id="buy"> <h2><a href="##">Buy Now </a></h2> </div>
+					</div>
+					<div id="item3">
+				 		<a><img src="images/face7.jpg" /></a> 
+								<h2>$25.00</h2>
+						<div id="buy"> <h2><a href="##">Buy Now </a></h2> </div>
+					</div>
+					<div id="item4">
+				 		<a><img src="images/face8.jpg" /></a>
+							<h2>$25.00</h2>						
+						<div id="buy"> <h2><a href="##">Buy Now </a></h2> </div>
+					</div>
+				
+				 <div id="items">
+				 	<div id="item1">
+					
+				 		<a><img src="images/face9.jpg" /></a>
+							<h2>$25.00</h2>
+						<div id="buy"> <h2><a href="##">Buy Now </a></h2> </div>
+					</div>	
+					<div id="item2">
+				 		<a><img src="images/face11.jpg" /></a> 
+						<div id="buy"> <h2><a href="##">Buy Now </a></h2> </div>
+					</div>
+					<div id="item3">
+				 		<a><img src="images/face12.jpg" /></a>
+							<h2>$25.00</h2>
+						<div id="buy"> <h2><a href="##">Buy Now </a></h2> </div>
+					</div>
+					<div id="item4">
+				 		<a><img src="images/face13.jpg" /></a> 
+						<h2>$25.00</h2>
+						<div id="buy"> <h2><a href="##">Buy Now </a></h2> </div>
+					</div>
+			</div>
+				<br>
+                </p>
+				
+                 <ul  > 
+	                 <li>Affordable Family Fun</li>
+	                 <li>Exhilarating Rides</li>
+	                 <li>Conveniently Located</a></li>
+                 </ul>
+		</article><!--end of article -->
+	    <div id="social" >
+			<div id="socialicon">
+				<ul id="menu">
+					<li ><a href "##"><img src="images/facebook-icon.png" ><span class="hiddenn"> Find us on Facebook</span></a></li>
+					<li ><a href "##"><img src="images/instagram-icon.png" ><span class="hiddenn"> Share on Instagram</span></a></li>
+					<li ><a href "##"><img src="images/youtube-icon.png" ><span class="hiddenn"> Watch on Youtube</span></a></li>
+					<li ><a href "##"><img src="images/twitter-icon.png" ><span class="hiddenn"> Tweet on Twitter</span></a></li>
+					
+				</ul>
+		    </div><!--end of div social icon -->
+			
+	    </div><!--end of div social -->
+
+		</section><!--end of section -->
+           
+		<footer>
+			<div id="footerNav">
+				<div id="footnav">
+					<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="#">PRODUCTS</a></li>
+					<li><a href="#">CONSUMER</a></li>
+					<li><a href="#">ENERGIE</a>	</li>
+					<li><a href="#">VIDEOS</a></li>
+					<li><a href="#">PROJECTS</a></li>
+					<li><a href="contact.html">CONTACTS</a></li>
+				</ul>
+				</div><!--end of foot nav div  -->
+			</div><!--end of footer nav div  -->
+			<div id="footerLogo">
+				<img src="image/LOGOUT.png" /></a>
+			</div><!--end of footer Logo div  -->
+		</footer>
+	</div><!--end of footer container div  -->
+</body>
+</html>

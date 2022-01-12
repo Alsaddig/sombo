@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<title> responsive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/lightbox.js"></script>
+		<script src="js/scripts.js"></script>
+		<script>	 
+			 jQuery(document).ready(function($) {
+				$('a').smoothScroll({
+				speed: 1000,
+				easing: 'easeInOutCubic'
+				});
+				$('.showOlderChanges').on('click', function(e){
+				$('.changelog .old').slideDown('slow');
+				$(this).fadeOut();
+				e.preventDefault();
+				 })
+				 });
+
+		</script>
+			<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<script type="text/JavaScript">
+
+		var picCount=0; // global
+		var picArray= ["images/smoogle.png","images/nilbog.png","images/pokeoAdd.png","images/McDonald'sAD.png","images/callToWar.png", ]
+		//
+		// gets next picture in array
+		function nextPic()
+		{ // check if adding 1 exceeds number of pics in array
+		picCount=(picCount+1<picArray.length)? picCount+1 : 0;
+		// build the img to write to page using the new pic reference
+		var build='<img border="0" src="'+picArray[picCount]+'" width="260" height="100%">\
+		';
+		document.getElementById("imgHolder").innerHTML=build;
+		// repeat this after a pause of 8000ms (8sec).
+		setTimeout('nextPic()',8000)
+		}
+
+		</script>
+</head>
+<body>
+    <div id="container" >
+        <header>
+            <div id="logo">
+				 <a><img src="image/LOG3.PNG" /></a>
+				 
+			</div><!--end of logodiv  -->
+			
+			<!--div id="ticketing">
+				<div id="Tickets">
+					<ul>
+						<li><a href="#">Buy Tickets</a></li>
+						<li><a href="#">Season Passes</a></li>
+					</ul>
+				 </div><!--end of ticket div  -->
+			</div--><!--end of ticketing div  -->
+     	</header>
+        <nav>
+            <a class="toggleMenu" href="#"><img src="amazementpark-images/menu-icon.png" />Menu</a>
+				<ul class="menu">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="#">PRODUCTS</a></li>
+					<li><a href="#">CONSUMER</a></li>
+					<li><a href="#">ENERGIE</a>	</li>
+					<li><a href="#">VIDEOS</a></li>
+					<li><a href="#">PROJECTS</a>	</li>
+					<li><a href="contact.html">CONTACTS</a>	</li>
+					
+				</ul>
+        </nav>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		
+			<div id="baner"> 
+			<div class="slideshow-container">
+			  <div class="mySlides fade">
+				<div class="numbertext">1 / 5</div>
+				<img src="image/p1.jpg" style="width:100%">
+				<div class="text">Bugatti Cars Wallpaper</div>
+			  </div>
+			  <div class="mySlides fade">
+				<div class="numbertext">2 / 5</div>
+				<img src="image/p2.jpg" style="width:100%">
+				<div class="text"> Cool Paint Jobs On Cars </div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<div class="numbertext">3 / 5</div>
+				<img src="image/p3.jpg" style="width:100%">
+				<div class="text">Peugeot 4002 Concept Car</div>
+			  </div>
+			  <div class="mySlides fade">
+				<div class="numbertext">4 / 5</div>
+				<img src="image/p4.jpg" style="width:100%">
+				<div class="text">Peugeot 4002 Concept Car</div>
+			  </div>
+			  <div class="mySlides fade">
+				<div class="numbertext">5 / 5</div>
+				<img src="image/p5.jpg" style="width:100%">
+				<div class="text">Peugeot 4002 Concept Car</div>
+			  </div>
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			  <span class="dot" onclick="currentSlide(4)"></span> 
+			  <span class="dot" onclick="currentSlide(5)"></span> 
+			</div>
+			<script src="js/scripts.js"></script>
+		</div><!--end of baner div  -->
+		
+		<section>
+		<article id="option">
+			<form id="sample" action="mailMain.php" method="POST">
+				<fieldset>
+					<legend>Contact Form</legend>
+					<p><label for="firstname">First Name:</label><input name="firstname" placeholder="First Name" type="text" /></p>
+					<p><label for="lastname">Last Name:</label><input name="lastname" placeholder="Last Name" type="text" /></p>
+					<p><label for="email">Email Address:<span class="important">*</span></label><input name="email" placeholder="namedomain.com" required type="email" /></p>
+					<p><label for="message">Message:<span class="important">*</span></label>
+					<textarea name="message" placeholder="Enter Your Message" required ></textarea></p>
+					<p><Label>Have you visited the Amazement Park before?</label>
+					<input type="Radio" value"Yes" name="youvisited">Yes
+					<input type="Radio" value"No" name="youvisited" />No</p><br>
+					<p><button>Send</button><span class="important">*</span><span id="required"> Required</span></p>
+				</fieldset>			
+			</form>
+         </article><!--end of article -->
+        <aside>
+            <video width="315" height="240" controls>
+				<source src="movie.mp4" type="video/mp4">
+				<source src="movie.ogg" type="video/ogg">
+			</video>
+        </aside><!--end of aside  -->
+		</section>
+     
+		<footer>
+			<div id="footerNav">
+				<div id="footnav">
+					<ul>
+						<li><a href="index.html">Jobs</a></li>
+						<li><a href "# #">Community</a></li>
+						<li><a href "# #">Media</a></li>
+						<li><a href="contact.html">Contact</a></li>
+				    
+					</ul><br>
+					100 Fun Street, Des Moines,Iowa 50301<br>
+					1-800-654-3210
+				</div><!--end of foot nav div  -->
+			</div><!--end of footer nav div  -->
+			<div id="footerLogo">
+				<img src="amazementpark-images/amazement-park-logo-sm.png" /></a>
+			</div><!--end of footer Logo div  -->
+		</footer>
+	</div><!--end of footer container div  -->
+</body>
+</html>
