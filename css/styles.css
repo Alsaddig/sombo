@@ -294,7 +294,13 @@
 		width:70%;
 		
 		float:left;
-		
+		text-align: right;
+				
+
+		}
+		article.ul > li {
+			float: right;
+				
 		}
 		#items{
 	wdith:635px;
