@@ -46,7 +46,7 @@
 			 *zoom: 1;
 			margin-top:0px;
 			margin-bottom:0px;
-			background:green;
+			background:#0B582E;
 			padding:10px;
 			margin-right:0px;
 		    margin-left:0px;
@@ -262,7 +262,7 @@
 		}
 
 		button.accordion.active, button.accordion:hover {
-			background-color: green;
+			background-color: #0B582E;
 		}
 
 		button.accordion:after {
@@ -448,7 +448,7 @@
 		margin-bottom:0px;
 		margin-right:40px;
 		margin-left:40px;
-		background:green;
+		background:#0B582E;
 		
 		overflow:auto;
 		clear:both;
@@ -497,11 +497,11 @@
 		float:right;
 		} 
 	h1{
-		color:green;
+		color:#0B582E;
 		font-size:20px;
 	   }
 	   h2{
-		color:green;
+		color:#0B582E;
 		font-size:18px;
 	   }
     a:link{
