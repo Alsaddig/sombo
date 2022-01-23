@@ -633,6 +633,10 @@
 				margin-left:0px;
 				margin-right:0px;
 								}
+								article img{
+									width:100%;
+									
+								}				
 			#sample label {
 						display:block;
 						float:none;
