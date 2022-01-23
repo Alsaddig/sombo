@@ -310,11 +310,15 @@
 			float: right;
 				
 		}
+		article img{
+			width:50%;
+			
+		}
 		#items{
-	wdith:635px;
-	background:white;
-	overflow:auto;
-		
+	         wdith:635px;
+			background:white;
+			overflow:auto;
+				
 	}
 	#item1{
 	float:left;
