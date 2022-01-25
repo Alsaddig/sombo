@@ -24,6 +24,10 @@
 		border-top-left-radius:10px;
 	        border-top-right-radius:10px;
 			margin-bottom:0px;
+			width: 100%;
+	   }
+	   header img{
+		   width: 100%;
 	   }
 	#logo{
 		float: right;
@@ -42,13 +46,13 @@
 		   height:22px;
 		  padding:5px;
 	   }
-	.toggle.menu {
+	/* .toggle.menu {
 		    
 			display:  none;
 			background:#0B582E;
 			
 			
-		}
+		} */
 	.menu {
 			list-style: none;
 			 *zoom: 1;
@@ -58,6 +62,7 @@
 			padding:10px;
 			margin-right:0px;
 		    margin-left:0px;
+			width: 100%;
 		/*border-top-left-radius:10px;
 	        border-top-right-radius:10px;
 			background:rgba(255,255,255,.3);*/
@@ -597,6 +602,13 @@
 					border-bottom:1px solid black;
 					
 				}
+				/* .toggle.menu {
+		    
+					display:list-item;
+					background:#0B582E;
+					
+					
+				} */
 			#bannerBackground{
 				 float:none;
 				 width:auto;
